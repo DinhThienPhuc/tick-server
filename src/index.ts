@@ -1,7 +1,6 @@
-import { config } from "@/utils/config";
-import { loggerService } from "@/utils/logger";
-
 import { createApp } from "./app";
+import { config } from "./utils/config";
+import { loggerService } from "./utils/logger";
 
 // Handle uncaught exceptions
 process.on("uncaughtException", (err: Error) => {

@@ -1,7 +1,6 @@
 import winston from "winston";
 
-import { ILoggerService } from "@/types";
-
+import { ILoggerService } from "../types";
 import { config } from "./config";
 
 const logFormat = winston.format.combine(

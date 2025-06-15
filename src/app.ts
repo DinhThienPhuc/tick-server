@@ -4,11 +4,11 @@ import express from "express";
 import helmet from "helmet";
 import morgan from "morgan";
 
-import { errorHandler, notFoundHandler } from "@/middleware/errorHandler";
-import { createRoutes } from "@/routes";
-import { TickService } from "@/services/TickService";
-import { config } from "@/utils/config";
-import { loggerService } from "@/utils/logger";
+import { errorHandler, notFoundHandler } from "./middleware/errorHandler";
+import { createRoutes } from "./routes";
+import { TickService } from "./services/TickService";
+import { config } from "./utils/config";
+import { loggerService } from "./utils/logger";
 
 export const createApp = (): {
   app: express.Application;

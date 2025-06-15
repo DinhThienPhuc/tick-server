@@ -2,9 +2,9 @@ import { randomUUID } from "crypto";
 import type { Request, Response, Router } from "express";
 import { Router as createRouter } from "express";
 
-import { asyncHandler } from "@/middleware/errorHandler";
-import { TickService } from "@/services/TickService";
-import { loggerService } from "@/utils/logger";
+import { asyncHandler } from "../middleware/errorHandler";
+import { TickService } from "../services/TickService";
+import { loggerService } from "../utils/logger";
 
 export const createRoutes = (tickService: TickService): Router => {
   const router = createRouter();

@@ -1,7 +1,7 @@
 import type { ServerResponse } from "http";
 
-import { ISSEClient, ITickEvent } from "@/types";
-import { loggerService } from "@/utils/logger";
+import { ISSEClient, ITickEvent } from "../types";
+import { loggerService } from "../utils/logger";
 
 export class TickService {
   private clients: Map<string, ISSEClient> = new Map();

@@ -1,6 +1,6 @@
 import type { NextFunction, Request, Response } from "express";
 
-import { loggerService } from "@/utils/logger";
+import { loggerService } from "../utils/logger";
 
 export interface IAppError extends Error {
   statusCode?: number;

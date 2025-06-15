@@ -1,6 +1,6 @@
 import dotenv from "dotenv";
 
-import { IAppConfig } from "@/types";
+import { IAppConfig } from "../types";
 
 dotenv.config();
 
